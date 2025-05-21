@@ -65,6 +65,9 @@ body {
   font-size: 1rem;
   text-align: center;
 }
+.para{
+  color: white;
+}
 
 .regi {
   display: flex;
