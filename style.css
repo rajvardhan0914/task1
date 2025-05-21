@@ -56,11 +56,9 @@ body{
     padding-top: 20px;
     padding-right: 40vw;
     padding-bottom: 50px;
-    text-decoration:underline 2px red;
-
+    color: rgb(131, 235, 117);
 }
-.h-info{
-
+.h-info{    
     width: 35vw;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 80px;
