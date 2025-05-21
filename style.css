@@ -1,85 +1,154 @@
-body{
-    margin: 0;
-    color: white;
-    background-image: url(https://img.freepik.com/free-vector/blue-polygon-dark-background-social-template_53876-116080.jpg?ga=GA1.1.249885969.1747556790&semt=ais_hybrid&w=740);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/free-vector/blue-polygon-dark-background-social-template_53876-116080.jpg?ga=GA1.1.249885969.1747556790&semt=ais_hybrid&w=740');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 
+.nav {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(6, 8, 8);
+  width: 100%;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
 }
-.logo {
- padding: 1em;}
-.nav-right{
-    display: flex;
-    flex-direction: row;
+
+.nav-logo {
+  padding-top: 6px;
+  padding-left: 0.5em;
 }
-.a-ele{
-    padding: 25px;
-    color: white;
+
+.nav-logo img {
+  width: 60px;
+  height: 60px;
 }
-.nav-middle{
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-right: 0.5em;
 }
-.sear-ele{
-    margin-top: 10px;
-    display: flex;
-    height: 40px;
-    width: 36px;
-    border: 2px solid white;
-    background-color: black;
+
+.a-ele {
+  color: white;
+  padding: 0.8em;
+  margin: 0.5em;
+  font-size: 1rem;
+  text-decoration: none;
 }
-.nav-tit{
-    border-top-left-radius: 2px;
-    display: flex;
-    height:16px;
-    width: 800px;
-    background-color: aliceblue;
-    color: black;
-    padding: 10px;
-    border: 3px solid white;
-    margin: 10px;
+.h-1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: rgb(131, 235, 117);
 }
-.h-1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 20px;
-    padding-right: 40vw;
-    padding-bottom: 50px;
-    color: rgb(131, 235, 117);
+
+.h-info {
+  width: 90%;
+  max-width: 600px;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin: auto;
+  padding-bottom: 40px;
+  font-size: 1rem;
+  text-align: center;
 }
-.h-info{    
-    width: 35vw;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 80px;
-    font-style: italic;
-    letter-spacing: 1px;
-    padding-bottom: 60px;
+
+.regi {
+  display: flex;
+  height: 60px;
+  width: 180px;
+  background-color: aqua;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
 }
-.regi{
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    width: 180px;
-    background-color: aqua;
-    border-radius: 20px;
-    justify-content: center;
-    margin-left: 150px;
+
+.button {
+  background-color: aqua;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
-.button{
-    background-color: aqua;
-    border: none;
+
+.regi-b {
+  text-align: center;
+  margin-bottom: 30px;
 }
-.regi-b{
-    margin-left: 160px;
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-right {
+    justify-content: flex-start;
+  }
+
+  .a-ele {
+    margin: 0.3em 0.5em;
+    font-size: 0.95rem;
+  }
+
+  .h-1 {
+    font-size: 1.5rem;
+  }
+
+  .h-info {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .regi {
+    width: 160px;
+    height: 50px;
+  }
+
+  .button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .a-ele {
+    font-size: 0.85rem;
+    padding: 0.5em;
+  }
+
+  .h-1 {
+    font-size: 1.3rem;
+  }
+
+  .h-info {
+    font-size: 0.9rem;
+  }
+
+  .regi {
+    width: 140px;
+    height: 45px;
+  }
+
+  .button {
+    font-size: 0.9rem;
+  }
 }
